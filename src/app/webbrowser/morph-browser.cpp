@@ -43,6 +43,10 @@
 //#include <QtWebEngine/qtwebengineglobal.h>
 
 #include <stdlib.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <iostream>
+#include <pthread.h>
 
 WebbrowserApp::WebbrowserApp(int& argc, char** argv)
     : BrowserApplication(argc, argv)
@@ -60,6 +64,36 @@ MAKE_SINGLETON_FACTORY(BookmarksModel)
 MAKE_SINGLETON_FACTORY(HistoryModel)
 MAKE_SINGLETON_FACTORY(Reparenter)
 
+int WebbrowserApp::run_tor(const char *dir) {
+   int pid, status;
+   // first we fork the process
+   if (pid = fork()) {
+       // pid != 0: this is the parent process (i.e. our process)
+       waitpid(pid, &status, 0); // wait for the child to exit
+   } else {
+       /* pid == 0: this is the child process. now let's load the
+          "ls" program into this process and run it */
+
+       // const char executable[] = "/bin/ls";
+
+       // load it. there are more exec__ functions, try 'man 3 exec'
+       // execl takes the arguments as parameters. execv takes them as an array
+       // this is execl though, so:
+       //      exec         argv[0]  argv[1] end
+       execl(dir, dir, NULL,    NULL);
+
+       /* exec does not return unless the program couldn't be started.
+          when the child process stops, the waitpid() above will return.
+       */
+
+
+   }
+   return status; // this is the parent process again.
+}
+void *WebbrowserApp::thread_tor(void *argument) {
+  std::cout << "returned: " << run_tor("/opt/click.ubuntu.com/onion.nanuc.org/0.1/share/tor/tor") << std::endl;
+ }
+
 bool WebbrowserApp::initialize()
 {
     const char* uri = "webbrowserapp.private";
@@ -73,9 +107,10 @@ bool WebbrowserApp::initialize()
     qmlRegisterType<SearchEngine>(uri, 0, 1, "SearchEngine");
     qmlRegisterType<TextSearchFilterModel>(uri, 0, 1, "TextSearchFilterModel");
     qmlRegisterSingletonType<Reparenter>(uri, 0, 1, "Reparenter", Reparenter_singleton_factory);
-
     QString qmlfile;
     const QString filePath = UbuntuBrowserDirectory() + "/webbrowser/morph-browser.qml";
+    pthread_t thread;
+    pthread_create(&thread, NULL, thread_tor, NULL);
     // QLatin1String("share/morph-browser/webbrowser/morph-browser.qml");
     QStringList paths = QStandardPaths::standardLocations(QStandardPaths::DataLocation);
     paths.prepend(QDir::currentPath());
@@ -91,7 +126,6 @@ bool WebbrowserApp::initialize()
     if (qmlfile.isEmpty()) {
         //qFatal("File: %s does not exist at any of the standard paths!", qPrintable(filePath));
     }
-
     if (BrowserApplication::initialize(filePath, QStringLiteral("morph-browser"))) {
         //QtWebEngine::initialize();
 

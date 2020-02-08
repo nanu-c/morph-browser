@@ -1007,7 +1007,7 @@ msgstr "%1 - Ubuntu web preglednik"
 
 #: src/app/webbrowser/morph-browser.qml:107
 #: src/app/webcontainer/webapp-container.qml:78
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:2
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:2
 #, fuzzy
 msgid "Morph Web Browser"
 msgstr "Web preglednik"
@@ -1097,25 +1097,25 @@ msgstr ""
 msgid "Reset webapp settings"
 msgstr "Vrati zadane postavke preglednika"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:1
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:1
 #, fuzzy
 msgid "Morph Browser"
 msgstr "Preglednik"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:3
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:3
 #, fuzzy
 msgid "Browse the World Wide Web using QtWebEngine"
 msgstr "Pregledajte svjetsku globalnu mrežu"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:4
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:4
 msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr "Internet;WWW;Preglednik;Web;Istraživač"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:5
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:5
 msgid "New Window"
 msgstr "Novi prozor"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:6
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:6
 msgid "New Private Window"
 msgstr "Novi privatni prozor"
 

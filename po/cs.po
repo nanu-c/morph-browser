@@ -1011,7 +1011,7 @@ msgstr "%1 - webový prohlížeč Morph"
 
 #: src/app/webbrowser/morph-browser.qml:107
 #: src/app/webcontainer/webapp-container.qml:78
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:2
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:2
 msgid "Morph Web Browser"
 msgstr "Webový prohlížeč Morph"
 
@@ -1097,23 +1097,23 @@ msgstr "«WebappContainer» nastavení"
 msgid "Reset webapp settings"
 msgstr "Obnovit nastavení webapp aplikací"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:1
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:1
 msgid "Morph Browser"
 msgstr "Prohlížeč Morph"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:3
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:3
 msgid "Browse the World Wide Web using QtWebEngine"
 msgstr "Brouzdejte po internetu s «QtWebEngine»"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:4
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:4
 msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr "Internet;WWW;Prohlížeč;Web;Explorer"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:5
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:5
 msgid "New Window"
 msgstr "Nové okno"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:6
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:6
 msgid "New Private Window"
 msgstr "Nové soukromé okno"
 

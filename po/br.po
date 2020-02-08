@@ -1008,7 +1008,7 @@ msgstr "%1 - Merdeer Web Ubuntu"
 
 #: src/app/webbrowser/morph-browser.qml:107
 #: src/app/webcontainer/webapp-container.qml:78
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:2
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:2
 #, fuzzy
 msgid "Morph Web Browser"
 msgstr "Merdeer web"
@@ -1099,25 +1099,25 @@ msgstr ""
 msgid "Reset webapp settings"
 msgstr "Adderaouekaat arventennoù ar merdeer"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:1
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:1
 #, fuzzy
 msgid "Morph Browser"
 msgstr "Merdeer"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:3
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:3
 #, fuzzy
 msgid "Browse the World Wide Web using QtWebEngine"
 msgstr "Merdeiñ war ar Web"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:4
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:4
 msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr "Internet;WWW;Merdeer;Web;Ergerzher"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:5
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:5
 msgid "New Window"
 msgstr ""
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:6
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:6
 msgid "New Private Window"
 msgstr ""
 

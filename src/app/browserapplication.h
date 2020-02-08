@@ -26,6 +26,9 @@
 #include <QtCore/QUrl>
 #include <QtWidgets/QApplication>
 
+//tor
+#include <QNetworkProxy>
+
 // local
 #include "single-instance-manager.h"
 

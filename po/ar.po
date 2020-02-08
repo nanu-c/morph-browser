@@ -1004,7 +1004,7 @@ msgstr "%1 - متصفح ويب أبونتو"
 
 #: src/app/webbrowser/morph-browser.qml:107
 #: src/app/webcontainer/webapp-container.qml:78
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:2
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:2
 #, fuzzy
 msgid "Morph Web Browser"
 msgstr "متصفح الويب"
@@ -1090,25 +1090,25 @@ msgstr ""
 msgid "Reset webapp settings"
 msgstr "إعادة تعيين إعدادات المتصفح"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:1
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:1
 #, fuzzy
 msgid "Morph Browser"
 msgstr "المتصفح"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:3
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:3
 #, fuzzy
 msgid "Browse the World Wide Web using QtWebEngine"
 msgstr "تصفح الشبكة العنكبوتية العالمية"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:4
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:4
 msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr "إنترنت;انترنت;تصفح;متصفح;وب;ويب;مستعرض;مستكشف"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:5
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:5
 msgid "New Window"
 msgstr ""
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:6
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:6
 msgid "New Private Window"
 msgstr ""
 

@@ -301,7 +301,7 @@ QtObject {
         property string defaultAudioDevice: ""
         property string defaultVideoDevice: ""
         property bool domainWhiteListMode: false
-        property bool incognitoOnStart: false
+        property bool incognitoOnStart: true
 
         function restoreDefaults() {
             homepage = ""
@@ -314,7 +314,7 @@ QtObject {
             defaultAudioDevice = "";
             defaultVideoDevice = "";
             domainWhiteListMode = false;
-            incognitoOnStart = false;
+            incognitoOnStart = true;
         }
 
         function resetDomainPermissions() {

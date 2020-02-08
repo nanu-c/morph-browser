@@ -26,8 +26,12 @@ AbstractButton {
 
     Rectangle {
         anchors.fill: parent
-        color: theme.palette.selected.background
+        color: "#FFFFFF"
         visible: parent.pressed
+    }
+    Rectangle {
+        anchors.fill: parent
+        color: "#7d4698"
     }
 
     Icon {

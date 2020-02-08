@@ -1001,7 +1001,7 @@ msgstr "%1 - 우분투 웹 브라우저"
 
 #: src/app/webbrowser/morph-browser.qml:107
 #: src/app/webcontainer/webapp-container.qml:78
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:2
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:2
 #, fuzzy
 msgid "Morph Web Browser"
 msgstr "웹 브라우저"
@@ -1090,25 +1090,25 @@ msgstr ""
 msgid "Reset webapp settings"
 msgstr "브라우저 설정 초기화하기"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:1
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:1
 #, fuzzy
 msgid "Morph Browser"
 msgstr "브라우저"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:3
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:3
 #, fuzzy
 msgid "Browse the World Wide Web using QtWebEngine"
 msgstr "웹을 돌아다닙니다"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:4
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:4
 msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr "Internet;인터넷;WWW;Browser;브라우저;Web;Explorer;익스플로러"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:5
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:5
 msgid "New Window"
 msgstr ""
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:6
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:6
 msgid "New Private Window"
 msgstr ""
 

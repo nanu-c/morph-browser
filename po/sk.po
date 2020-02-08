@@ -1006,7 +1006,7 @@ msgstr "%1 - Webový prehliadač Ubuntu"
 
 #: src/app/webbrowser/morph-browser.qml:107
 #: src/app/webcontainer/webapp-container.qml:78
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:2
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:2
 #, fuzzy
 msgid "Morph Web Browser"
 msgstr "Webový prehliadač"
@@ -1094,25 +1094,25 @@ msgstr ""
 msgid "Reset webapp settings"
 msgstr "Obnovenie nastavení prehliadača"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:1
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:1
 #, fuzzy
 msgid "Morph Browser"
 msgstr "Prehliadač"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:3
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:3
 #, fuzzy
 msgid "Browse the World Wide Web using QtWebEngine"
 msgstr "Prehliadanie internetu"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:4
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:4
 msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr "Internet;WWW;Prehliadač;Web;Explorer"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:5
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:5
 msgid "New Window"
 msgstr ""
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:6
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:6
 msgid "New Private Window"
 msgstr ""
 

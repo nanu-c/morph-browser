@@ -1,17 +1,17 @@
 {
-    "name": "com.ubports.morph.browser",
-    "description": "Morph Browser using QtWebEngine",
+    "name": "onion.nanuc.org",
+    "description": "A Browser clone using tor and QtWebEngine",
     "framework": "ubuntu-sdk-16.04",
     "architecture": "@CLICK_ARCH@",
-    "title": "Morph Browser",
-    "icon": "@CMAKE_INSTALL_DATADIR@/morph-browser/morph-browser.png",
+    "title": "Tor Browser",
+    "icon": "@CMAKE_INSTALL_DATADIR@/morph-browser/onion-browser.png",
     "hooks": {
         "clock": {
-            "apparmor": "morph-browser.apparmor",
-            "desktop": "@CMAKE_INSTALL_DATADIR@/applications/morph-browser.desktop",
-            "urls": "@CMAKE_INSTALL_DATADIR@/url-dispatcher/urls/morph-browser.url-dispatcher"
+            "apparmor": "onion-browser.apparmor",
+            "desktop": "@CMAKE_INSTALL_DATADIR@/applications/onion-browser.desktop",
+            "urls": "@CMAKE_INSTALL_DATADIR@/url-dispatcher/urls/onion-browser.url-dispatcher"
         }
     },
     "version": "0.1",
-    "maintainer": "UBports Developers"
+    "maintainer": "Aaron Kimmig"
 }

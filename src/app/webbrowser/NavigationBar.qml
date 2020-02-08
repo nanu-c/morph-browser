@@ -42,8 +42,8 @@ FocusScope {
     property alias incognito: addressbar.incognito
     property alias showFaviconInAddressBar: addressbar.showFavicon
     readonly property alias bookmarkTogglePlaceHolder: addressbar.bookmarkTogglePlaceHolder
-    property color fgColor: theme.palette.normal.baseText
-    property color iconColor: theme.palette.selected.base
+    property color fgColor: "#FFFFFF"
+    property color iconColor: "#FFFFFF"
     property real availableHeight
 
     onFindInPageModeChanged: if (findInPageMode) addressbar.text = ""
@@ -99,7 +99,6 @@ FocusScope {
             iconName: "next"
             iconSize: 0.4 * height
             iconColor: root.iconColor
-
             height: root.height
             visible: enabled
             width: visible ? height * 0.8 : 0
@@ -296,7 +295,7 @@ FocusScope {
 
             Rectangle {
                 anchors.fill: actionsListView
-                color: theme.palette.normal.background
+                color: "#7d4698"
 
                 Rectangle {
                     anchors {
@@ -315,7 +314,7 @@ FocusScope {
                         bottom: parent.bottom
                     }
                     height: units.dp(1)
-                    color: theme.palette.normal.background
+                    color: "#7d4698"
                 }
             }
 

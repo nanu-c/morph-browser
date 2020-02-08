@@ -1,8 +1,12 @@
 {
   "template": "cmake",
-  "kill": "morph-browser",
+  "kill": "onion-browser",
   "build_args": "-DCLICK_MODE=ON",
+  "dependencies_host": [
+    "tor:armhf"
+  ],
   "dependencies_target": [
-    "qtwebengine5-dev"
+    "qtwebengine5-dev",
+    "tor"
   ]
 }

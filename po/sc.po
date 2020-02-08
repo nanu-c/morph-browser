@@ -1016,7 +1016,7 @@ msgstr "%1 - Morph, navigadore web"
 
 #: src/app/webbrowser/morph-browser.qml:107
 #: src/app/webcontainer/webapp-container.qml:78
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:2
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:2
 msgid "Morph Web Browser"
 msgstr "Navigadore web Morph"
 
@@ -1103,23 +1103,23 @@ msgstr "Cunfiguratzione de su WebappContainer"
 msgid "Reset webapp settings"
 msgstr "Reseta sa cunfiguratzione de s'aplicatzione web"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:1
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:1
 msgid "Morph Browser"
 msgstr "Navigadore Morph"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:3
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:3
 msgid "Browse the World Wide Web using QtWebEngine"
 msgstr "Nàviga in sa web cun QtWebEngine"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:4
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:4
 msgid "Internet;WWW;Browser;Web;Explorer"
 msgstr "Internet;WWW;Navigadore;Web;Esploradore;Esplora"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:5
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:5
 msgid "New Window"
 msgstr "Ventana noa"
 
-#: po/src/app/webbrowser/morph-browser.desktop.in.in.h:6
+#: po/src/app/webbrowser/onion-browser.desktop.in.in.h:6
 msgid "New Private Window"
 msgstr "Ventana privada noa"
 

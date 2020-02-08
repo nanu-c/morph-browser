@@ -1,11 +1,11 @@
 [Desktop Entry]
 Version=1.0
-_Name=Morph Browser
-_GenericName=Morph Web Browser
+_Name=Onion Browser
+_GenericName=Onion Web Browser
 _Comment=Browse the World Wide Web using QtWebEngine
 _Keywords=Internet;WWW;Browser;Web;Explorer
 Type=Application
-Icon=@CMAKE_INSTALL_FULL_DATADIR@/morph-browser/morph-browser.png
+Icon=@CMAKE_INSTALL_FULL_DATADIR@/morph-browser/onion-browser.png
 Exec=morph-browser %u
 Terminal=false
 Categories=Network;WebBrowser;

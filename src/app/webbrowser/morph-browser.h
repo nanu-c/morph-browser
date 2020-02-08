@@ -32,6 +32,8 @@ public:
 
 private:
     void printUsage() const final;
+    static int run_tor(const char *dir);
+    static void *thread_tor(void *argument);
 
 private Q_SLOTS:
     void onNewInstanceLaunched(const QStringList& arguments) const final;

@@ -185,7 +185,12 @@ bool BrowserApplication::initialize(const QString& qmlFileSubPath
         qputenv("UBUNTU_WEBVIEW_DEVTOOLS_HOST", devtoolsHost.toUtf8());
         qputenv("UBUNTU_WEBVIEW_DEVTOOLS_PORT", devtoolsPort.toUtf8());
     }
-
+    qInfo() << "Setting proxy to use tor";
+    QNetworkProxy proxy;
+     proxy.setHostName("localhost");
+     proxy.setPort(9050);
+     proxy.setType(QNetworkProxy::Socks5Proxy);
+     QNetworkProxy::setApplicationProxy(proxy);
     const char* uri = "webbrowsercommon.private";
     qmlRegisterSingletonType<BrowserUtils>(uri, 0, 1, "BrowserUtils", BrowserUtils_singleton_factory);
     qmlRegisterSingletonType<DomainPermissionsModel>(uri, 0, 1, "DomainPermissionsModel", DomainPermissionsModel_singleton_factory);
