@@ -28,6 +28,7 @@
 #include <QtCore/QString>
 #include <QtCore/QStringList>
 #include <QtNetwork/QLocalSocket>
+#include <QDebug>
 
 #if defined(Q_OS_LINUX) || defined(Q_OS_UNIX)
 #  include <sys/socket.h>
@@ -96,6 +97,7 @@ bool ensureNameProfilePathExists(const QString& profilePath) {
 }
 
 bool isLocalServerNameLengthValid(const QString& serverName) {
+  qInfo() << serverName;
 #if defined(Q_OS_LINUX) || defined(Q_OS_UNIX)
     struct ::sockaddr_un addr;
     const QByteArray encodedServerName =
@@ -163,7 +165,7 @@ bool SingleInstanceManager::run(const QStringList& arguments, const QString& app
                    << "behaviors in the application's cache management. To avoid that"
                    << "you could use a shorter application name.";
     }
-    
+
     if (!ensureNameProfilePathExists(profilePath)) {
         return false;
     }

@@ -5,8 +5,14 @@
         "networking",
         "location",
         "content_exchange",
-        "keep-display-on"
+        "keep-display-on",
+        "camera",
+        "connectivity",
+        "content_exchange",
+        "content_exchange_source",
+        "video",
+        "push-notification-client",
+        "webview"
     ],
-    "policy_version": 16.04,
-    "template": "unconfined"
+    "policy_version": 16.04
 }

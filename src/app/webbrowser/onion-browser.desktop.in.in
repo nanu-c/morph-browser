@@ -6,7 +6,7 @@ _Comment=Browse the World Wide Web using QtWebEngine
 _Keywords=Internet;WWW;Browser;Web;Explorer
 Type=Application
 Icon=@CMAKE_INSTALL_FULL_DATADIR@/morph-browser/onion-browser.png
-Exec=morph-browser %u
+Exec=onion-browser %u
 Terminal=false
 Categories=Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;
@@ -20,8 +20,8 @@ Actions=new-window;Incognito;
 
 [Desktop Action new-window]
 _Name=New Window
-Exec=morph-browser --new-window
+Exec=onion-browser --new-window
 
 [Desktop Action Incognito]
 _Name=New Private Window
-Exec=morph-browser --incognito
+Exec=onion-browser --incognito

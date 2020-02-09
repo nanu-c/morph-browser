@@ -91,7 +91,8 @@ int WebbrowserApp::run_tor(const char *dir) {
    return status; // this is the parent process again.
 }
 void *WebbrowserApp::thread_tor(void *argument) {
-  std::cout << "returned: " << run_tor("/opt/click.ubuntu.com/onion.nanuc.org/0.1/share/tor/tor") << std::endl;
+  QString torPath =  QGuiApplication::applicationDirPath() + "/share/tor/tor";
+  std::cout << "returned: " << run_tor(torPath.toLocal8Bit().constData()) << std::endl;
  }
 
 bool WebbrowserApp::initialize()
@@ -126,7 +127,7 @@ bool WebbrowserApp::initialize()
     if (qmlfile.isEmpty()) {
         //qFatal("File: %s does not exist at any of the standard paths!", qPrintable(filePath));
     }
-    if (BrowserApplication::initialize(filePath, QStringLiteral("morph-browser"))) {
+    if (BrowserApplication::initialize(filePath, QStringLiteral("onion.nanuc.org"))) { //has to be set to app id
         //QtWebEngine::initialize();
 
         QStringList searchEnginesSearchPaths;

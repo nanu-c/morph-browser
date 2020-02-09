@@ -118,7 +118,7 @@ bool BrowserApplication::initialize(const QString& qmlFileSubPath
         printUsage();
         return false;
     }
-
+    qInfo() << appId;
     if (appId.isEmpty()) {
         qCritical() << "Cannot initialize the runtime environment: "
                        "no application id detected.";

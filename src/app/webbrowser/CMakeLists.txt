@@ -40,7 +40,7 @@ set(WEBBROWSER_APP_SRC
     morph-browser.cpp
 )
 
-set(WEBBROWSER_APP morph-browser)
+set(WEBBROWSER_APP onion-browser)
 
 add_executable(${WEBBROWSER_APP} ${WEBBROWSER_APP_SRC})
 target_link_libraries(${WEBBROWSER_APP}
