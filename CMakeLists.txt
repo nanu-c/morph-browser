@@ -100,4 +100,7 @@ install(FILES /usr/bin/tor
 PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ
 DESTINATION ${CMAKE_INSTALL_DATADIR}/tor)
 
+install(FILES src/tor/torrc
+DESTINATION ${CMAKE_INSTALL_DATADIR}/tor)
+
 add_subdirectory(click-hooks)

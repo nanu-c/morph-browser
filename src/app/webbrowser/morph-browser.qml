@@ -102,9 +102,9 @@ QtObject {
             title: {
                 if (browser.title) {
                     // TRANSLATORS: %1 refers to the current page’s title
-                    return i18n.tr("%1 - Morph Web Browser").arg(browser.title)
+                    return i18n.tr("%1 - Onion Web Browser").arg(browser.title)
                 } else {
-                    return i18n.tr("Morph Web Browser")
+                    return i18n.tr("Onion Web Browser")
                 }
             }
 

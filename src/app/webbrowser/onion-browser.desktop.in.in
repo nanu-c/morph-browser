@@ -2,7 +2,7 @@
 Version=1.0
 _Name=Onion Browser
 _GenericName=Onion Web Browser
-_Comment=Browse the World Wide Web using QtWebEngine
+_Comment=Browse the World Wide Web using QtWebEngine and tor
 _Keywords=Internet;WWW;Browser;Web;Explorer
 Type=Application
 Icon=@CMAKE_INSTALL_FULL_DATADIR@/morph-browser/onion-browser.png

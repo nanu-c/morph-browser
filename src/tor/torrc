@@ -1,0 +1,2 @@
+SOCKSPort 9050
+DataDirectory /home/phablet/.local/share/onion.nanuc.org/.tor

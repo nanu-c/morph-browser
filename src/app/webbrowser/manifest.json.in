@@ -6,12 +6,12 @@
     "title": "Tor Browser",
     "icon": "@CMAKE_INSTALL_DATADIR@/morph-browser/onion-browser.png",
     "hooks": {
-        "clock": {
+        "onion": {
             "apparmor": "onion-browser.apparmor",
             "desktop": "@CMAKE_INSTALL_DATADIR@/applications/onion-browser.desktop",
             "urls": "@CMAKE_INSTALL_DATADIR@/url-dispatcher/urls/onion-browser.url-dispatcher"
         }
     },
     "version": "0.2",
-    "maintainer": "Aaron Kimmig"
+    "maintainer": "Aaron Kimmig <aaron@nanu-c.org>"
 }

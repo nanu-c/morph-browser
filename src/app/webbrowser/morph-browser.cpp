@@ -66,6 +66,8 @@ MAKE_SINGLETON_FACTORY(Reparenter)
 
 int WebbrowserApp::run_tor(const char *dir) {
    int pid, status;
+   QString torPath =  QGuiApplication::applicationDirPath() + "/share/tor/tor";
+
    // first we fork the process
    if (pid = fork()) {
        // pid != 0: this is the parent process (i.e. our process)
@@ -80,7 +82,15 @@ int WebbrowserApp::run_tor(const char *dir) {
        // execl takes the arguments as parameters. execv takes them as an array
        // this is execl though, so:
        //      exec         argv[0]  argv[1] end
-       execl(dir, dir, NULL,    NULL);
+       // execl(dir, dir, NULL,    NULL);
+       char *cmd = "tor";
+       char *argv[4];
+       argv[0] = "tor";
+       argv[1] = "-f";
+       argv[2] = "/opt/click.ubuntu.com/onion.nanuc.org/current/share/tor/torrc";
+       argv[3] = NULL;
+       // char *const cmd[] = {"tor", " -f ", "/opt/click.ubuntu.com/onion.nanuc.org/current/tor/torrc", NULL};
+       execvp(cmd, argv);
 
        /* exec does not return unless the program couldn't be started.
           when the child process stops, the waitpid() above will return.
@@ -91,8 +101,7 @@ int WebbrowserApp::run_tor(const char *dir) {
    return status; // this is the parent process again.
 }
 void *WebbrowserApp::thread_tor(void *argument) {
-  QString torPath =  QGuiApplication::applicationDirPath() + "/share/tor/tor";
-  std::cout << "returned: " << run_tor(torPath.toLocal8Bit().constData()) << std::endl;
+  std::cout << "returned: " << run_tor("ls -lah") << std::endl;
  }
 
 bool WebbrowserApp::initialize()
