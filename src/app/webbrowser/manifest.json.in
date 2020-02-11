@@ -12,6 +12,6 @@
             "urls": "@CMAKE_INSTALL_DATADIR@/url-dispatcher/urls/onion-browser.url-dispatcher"
         }
     },
-    "version": "0.2",
+    "version": "0.3",
     "maintainer": "Aaron Kimmig <aaron@nanu-c.org>"
 }
