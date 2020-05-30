@@ -208,6 +208,9 @@ int main(int argc, char** argv)
     qputenv("QTWEBENGINE_DISABLE_SANDBOX","1");
     qputenv("QT_WEBENGINE_DISABLE_GPU","1");
     qputenv("QT_AUTO_SCREEN_SCALE_FACTOR", "true");
+    
+    const auto chromiumFlags = qgetenv("QTWEBENGINE_CHROMIUM_FLAGS");
+    qputenv("QTWEBENGINE_CHROMIUM_FLAGS", chromiumFlags + "--force-webrtc-ip-handling-policy=disable_non_proxied_udp");
 
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
