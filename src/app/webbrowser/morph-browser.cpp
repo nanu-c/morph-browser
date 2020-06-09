@@ -210,7 +210,7 @@ int main(int argc, char** argv)
     qputenv("QT_AUTO_SCREEN_SCALE_FACTOR", "true");
     
     const auto chromiumFlags = qgetenv("QTWEBENGINE_CHROMIUM_FLAGS");
-    qputenv("QTWEBENGINE_CHROMIUM_FLAGS", chromiumFlags + "--force-webrtc-ip-handling-policy=disable_non_proxied_udp --disable-reading-from-canvas");
+    qputenv("QTWEBENGINE_CHROMIUM_FLAGS", chromiumFlags + "--force-webrtc-ip-handling-policy=disable_non_proxied_udp --disable-reading-from-canvas --no-pings");
 
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
